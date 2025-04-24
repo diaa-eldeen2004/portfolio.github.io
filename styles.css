@@ -240,7 +240,7 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
-/* Add these to your existing CSS */
+
 .fa-film, .fa-paint-brush, .fa-microphone {
     font-size: 1.5rem;
 }
@@ -255,4 +255,62 @@ footer p {
 
 .project-item.creative a {
     background-color: var(--primary-color);
+}
+
+.profile-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.profile-info a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* CV Download Section */
+.cv-download {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.cv-download h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cv-container {
+    text-align: center;
+}
+
+.cv-container p {
+    margin-bottom: 15px;
+    color: var(--light-text);
+}
+
+.cv-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    font-size: 1.1rem;
+}
+
+.cv-button:hover {
+    background-color: var(--accent-color);
+}
+
+.cv-button i {
+    margin-right: 8px;
 }
