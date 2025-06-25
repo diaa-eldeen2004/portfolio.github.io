@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Diaa ElDeen Amin Ibrahim Fouad} \\ \vspace{1pt}
+    \small +201104796186 $|$ \href{mailto:diaaeldeenamin11@gmail.com}{\underline{diaaeldeenamin@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/diaa-eldeen-39ab0b310/}{\underline{linkedin}} $|$
+    \href{https://github.com/diaa-eldeen2004}{\underline{github}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Misr International University}{Cairo, Egypt}
+      {Bachelor of Computer Science (Expected July 2027)}{October 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Relevant coursework: Problem Solving, Data Structures, Algorithms, OOP, web development}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C++ (Advanced), Java, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks/Tools}{: Node.js, MongoDB, SQL, Git} \\
+     \textbf{Software}{: VS Code, Visual Studio, Adobe After Effects, Illustrator} \\
+     \textbf{Languages}{: Arabic (Native), English (Professional Working Proficiency)} \\
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    % C++ Projects
+    \resumeProjectHeading
+      {\textbf{Advising Center System} $|$ \emph{C++, Problem Solving}}{\href{https://github.com/diaa-eldeen2004/Advising-Center}{(GitHub)}}
+      \resumeItemListStart
+        \resumeItem{Developed an academic guidance system handling course prerequisites and scheduling constraints}
+        \resumeItem{Implemented file I/O operations for persistent data storage of student records}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Bank Management System} $|$ \emph{C++, Problem Solving}}{\href{https://github.com/diaa-eldeen2004/Bank-System}{(GitHub)}}
+      \resumeItemListStart
+        \resumeItem{Built a secure transaction system with account validation and balance tracking}
+        \resumeItem{Utilized polymorphism for different account types (savings/checking)}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Matching Card Game} $|$ \emph{C++, Data Structures}}{\href{https://github.com/diaa-eldeen2004/Matching-Card-Game}{(GitHub)}}
+      \resumeItemListStart
+        \resumeItem{Engineered game logic using stack for card matching and queue for turn management}
+        \resumeItem{Designed scoring system with time-based multipliers}
+      \resumeItemListEnd
+
+       \resumeProjectHeading
+      {\textbf{Alarm} $|$ \emph{C++, Data Structures}}{\href{https://github.com/diaa-eldeen2004/Alarm}{(GitHub)}}
+      \resumeItemListStart
+        \resumeItem{Making Alarm simulation project for add or delete or edit Alarms and connect it with the real Time}
+        \resumeItem{Developed it to ring at the specific time that the user entered}
+      \resumeItemListEnd
+
+    % Java Project
+    \resumeProjectHeading
+      {\textbf{Clinic Management System} $|$ \emph{Java, OOP}}{\href{https://github.com/diaa-eldeen2004/Clinic-Management-System}{(GitHub)}}
+      \resumeItemListStart
+        \resumeItem{Developed a GUI application for managing patient records and doctor appointments}
+        \resumeItem{Implemented search functionality with filters for patient history tracking}
+      \resumeItemListEnd
+
+    % Web Development Projects
+    \resumeProjectHeading
+      {\textbf{Movie Database Platform} $|$ \emph{Full Stack JavaScript}}{\href{https://github.com/diaa-eldeen2004/Movie-Website}{(GitHub)}}
+      \resumeItemListStart
+        \resumeItem{Architected responsive frontend with dynamic content loading and rating system}
+        \resumeItem{Developed REST API endpoints using Node.js with MongoDB for movie data storage}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------COURSES-----------
+\section{Courses \& Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Problem Solving, Data Structure with C++}{Sep 2023 -- June 2024}
+      {Misr International University}{Cairo, Egypt}
+      \resumeItemListStart
+        \resumeItem{Mastered core programming concepts: loops, functions, data structures, Algorithms}
+        \resumeItem{Developed 5 complex projects 2 for demonstrating problem-solving skills and 3 for data-structure and algorithms }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Motion Graphics}{Feb 2024 -- Present}
+      {Tahalip Academy}{Online {\href{https://drive.google.com/drive/folders/1NHHkv6Ns0UMS_ipoQYjgLseoXSvgoS-o}{(Drive)}}}
+      
+      \resumeItemListStart
+        \resumeItem{Proficient in Adobe After Effects and Illustrator for animation workflows}
+        \resumeItem{Created educational animations following style guidelines}
+        
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
